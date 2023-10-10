@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    /* 100% largura*/
+    width: 100%;
+    /*site com borda*/
+    /*width : 1200 px */
+    /*margin : 0px auto*/
+    height: 40px;
+    /*O paddig concatena ou seja aumenta o heigt*/
+    padding: 10px 0px;
+    background-color: rgb(109, 109, 189);
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: black;
+    border-radius: 40px;
+    overflow: hidden;
+    float: left;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+nav {
+    width: auto;
+    height: 40px;
+    float: right;
+    line-height:40px ;
+    margin: 0px 20px;    
+}
+a{
+    text-decoration: none;
+    margin: 0px 6px;
+    background-color: aqua;
+    color: black;
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
