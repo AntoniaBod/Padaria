@@ -1,0 +1,58 @@
+main{
+    width: 100%;
+    margin: 20px 0px;
+}
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#sectionItens{
+    width: 100%;
+    background-color: rgb(22, 77, 58);
+    /*configuração padrão: topo, esquerda e em coluna*/
+    display: flex; /*muda a maneira de mostrar no navegador*/
+    /* row - linha e column-coluna*/
+    /*reverse- inverso*/
+    flex-direction: row ;/* muda a direção do flexbox*/
+    justify-content: center;/*start - começo da linha, end- fim da linha, center- centro, spacebetween - espaço no meio --- MUDA A HORIZONTALMNENTE*/
+    align-items: center;/* MUDA VERTICALMENTE*/
+    flex-wrap: wrap;/* para a foto não ficar comprimindo*/
+    gap:100px;/*margem entre os elementos é como se fosse o margim*/
+}
+.item{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.intemImagem{
+    width: 100%;
+    height: 50%;
+}
+.intemImagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.intemDescricao{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+.intemDescricao h3{
+    margin: 10px 0px;
+    background-color: blue;
+}
+.intemDescricao p{
+    margin: 20px 0px;
+    background-color: green;
+}
+.intemValor {
+    font-size: 20pt;
+    color:black;
+    font-weight: bold;
+}
