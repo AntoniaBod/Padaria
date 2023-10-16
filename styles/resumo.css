@@ -1,0 +1,116 @@
+@keyframes mudaCor{
+    0%{
+        background-color: crimson;
+    }
+    10%{
+        background-color: blue;  
+    }
+    20%{
+        background-color: black;   
+    }
+    30%{
+        background-color: aqua;   
+    }
+    40%{
+        background-color: green;
+    }
+    50%{
+        background-color: greenyellow;   
+    }
+    60%{
+        background-attachment:red;
+    }
+    70%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+    90%{
+        background-color: brown;
+    }
+    100%{
+        background-color: orange;
+    }
+}
+@font-face{
+    font-family: Monday;
+    src: url(../fonts/monday_rain/Monday\ Rain.otf);
+}
+/* otf, ttf - para indentificar fonte*/
+@font-face{
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: bold;
+    /*com variantes tem que colocar o terceiro elemento*/
+}
+@font-face{
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: bolder;
+    /*com variantes tem que colocar o terceiro elemento*/
+}
+
+@keyframes mudaBackground{
+    0%{
+        background-image: url(../images/padaria.jpg);
+        transition: 10s;
+    }
+    25%{
+        background-image: url(../images/padeiro.webp);
+        transition: 10s;
+    }
+    50%{
+        background-image: url(../images/pao\ de\ queijo.jpg);
+        transition: 10s;
+    }
+    75%{
+        background-image: url(../images/Pao\ de\ doce.jpg);
+        transition: 10s;
+    }
+    100%{
+        background-image: url(../images/pao\ hamburgue.jpg);
+        transition: 10s;
+    }
+}
+main{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 20px 0px;
+    font-family: Monday ;
+    font-size: 40pt;
+    background-position: center;
+    animation-name: mudaCor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;    
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Inter;
+}
+
+
+#caixaImagem{
+    width: 700px;
+    height: 700px;
+    background-image: url(../images/pao\ hamburgue.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* PODE FAZER ASSIM:
+    animation-name: mudaBackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;  ou como abaixo*/ 
+    animation: mudaBackground 10s infinite;
+    
+}

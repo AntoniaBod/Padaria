@@ -4,11 +4,13 @@ main{
 }
 h1{
     text-align: center;
+    font-size: 30pt;
     color: blueviolet;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #sectionItens{
     width: 100%;
+    height: 750px;
     background-color: rgb(22, 77, 58);
     /*configuração padrão: topo, esquerda e em coluna*/
     display: flex; /*muda a maneira de mostrar no navegador*/
@@ -18,11 +20,11 @@ h1{
     justify-content: center;/*start - começo da linha, end- fim da linha, center- centro, spacebetween - espaço no meio --- MUDA A HORIZONTALMNENTE*/
     align-items: center;/* MUDA VERTICALMENTE*/
     flex-wrap: wrap;/* para a foto não ficar comprimindo*/
-    gap:100px;/*margem entre os elementos é como se fosse o margim*/
+    gap:75px;/*margem entre os elementos é como se fosse o margim*/
 }
 .item{
-    width: 200px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     margin: 20px;
     background-color: white;
     padding: 20px;
